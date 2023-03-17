@@ -1,0 +1,341 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body{
+	width: 100%;
+	margin: 0 auto;
+	color: #fff;
+	background: #111;
+}
+
+section{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.btn{
+	padding: .6rem 1rem;
+	color: #fff;
+	background: #f9004d;
+	border-radius: 15px;
+	transition-duration: .2s;
+	border: solid 2px #f9004d;
+	outline: none;
+	outline-offset: none;
+}
+
+.btn:hover{
+	background: transparent;
+	border: solid 2px #f9004d;
+}
+
+.image{
+	width: 15rem;
+	overflow-y: hidden;
+	border-radius: 10px;
+}
+
+img{
+	width: 100%;
+	display: block;
+}
+
+span{
+	color: #f9004d;
+}
+
+/*---------- nav -----------*/
+
+nav{
+	position: sticky;
+	top: 0;
+	height: 15vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: .8rem;
+	font-size: .8rem;
+	background: #111;
+}
+
+nav .nav-name{
+	font-size: 2.5rem;
+	font-weight: 700;
+	cursor: pointer; 
+}
+
+nav .nav-name span{
+	font-size: 2rem;
+}
+
+nav .nav-name span span{
+	color: #f9004d;
+}
+
+nav .link-list ul{
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+nav .link-list ul li{
+	list-style: none;
+}
+
+nav .link-list ul li a{
+	text-decoration: none;
+	color: #fff;
+	transition-duration: .2s;
+	display: block;
+}
+
+nav .link-list ul li a:hover{
+	color: #f9004d;
+	transform: scale(1.2);
+}
+
+.subscribe-btn a{
+	text-decoration: none;
+	transition-duration: .2S;
+}
+
+
+/*========== end of the nav ============*/
+
+/*========== splash section ============*/
+
+main .splash{
+	height: calc(85vh - 2rem);
+	padding-top: 2rem;
+	/*background: #000;*/
+}
+
+main .splash .splash-container{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+main .splash .splash-container .splash-text-search .splash-text{
+	line-height: 4;
+}
+
+main .splash .splash-container .splash-text-search .splash-text .p2{
+	font-size: 3.5rem;
+	margin-left: .5rem;
+	line-height: 1;
+}
+
+main .splash .splash-container .splash-text-search .splash-text .p2 span{
+	color: #f9004d;
+}
+
+main .splash .splash-container .splash-text-search .splash-text .p3{
+	font-weight: 500;
+}
+
+main .splash .splash-container .image{
+	width: 15rem;
+	overflow-y: hidden;
+	border-radius: 10px;
+	margin-right: 1rem;
+}
+
+main .splash .splash-container .image img{
+	width: 100%;
+	display: block;
+}
+
+main .splash .splash-container .splash-text-search .splash-search-bar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+	padding: .2rem .2rem;
+	width: 30vw;
+	border-radius: 1.2rem;
+}
+
+main .splash .splash-container .splash-text-search .splash-search-bar input{
+	padding-right: 1.2rem;
+}
+
+main .splash .splash-container .splash-text-search .splash-search-bar input::placeholder{
+	color: #000;
+}
+
+main .splash .splash-container .splash-text-search .splash-search-bar input,
+main .splash .splash-container .splash-text-search .splash-search-bar button{
+	border: none;
+	outline: none;
+	margin-left: 1rem;
+}
+
+main .splash .splash-container .splash-text-search .splash-search-bar button{
+	background: #f9004d;
+	color: #fff;
+	padding: .6rem .8rem;
+	border-radius: 1.2rem;
+}
+
+/*======== END OF SPLASH SECTION ========*/
+
+/*=========== ABOUT ME SECTION =============*/
+
+main .about-me{
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	/*gap: 2rem;*/
+	align-items: center;
+	/*background: #000;*/
+}
+
+main .about-me .about-me-text{
+	width: 35vw;
+	line-height: 2rem;
+}
+
+main .about-me .about-me-text p:nth-child(1){
+	font-size: 3.5rem;
+	font-weight: 700;
+}
+
+main .about-me .about-me-text p:nth-child(2){
+	margin-top: 1rem;
+}
+
+main .about-me .about-me-text p:nth-child(3){
+	font-size: .8rem;
+	color: #aaa;
+	margin-bottom: 1rem;
+}
+
+/*======== END OF ABOUT ME ==========*/
+
+/*======== OUR SERVICES SECTION ========*/
+
+main .our-service{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+main .our-service > p{
+	font-size: 3.5rem;
+}
+
+main .our-service .service-divs{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	column-gap: 1rem;
+	margin-top: 2rem;
+}
+
+main .our-service .service-divs .service-text{
+	text-align: center;
+	background: #222;
+	border-radius: 10px;
+	padding: 1.5rem;
+	/*line-height: 1.5;*/
+}
+
+main .our-service .service-divs .service-text span{
+	display: block;	
+	font-size: 2rem;
+}
+
+main .our-service .service-divs .service-text :nth-child(2){
+	font-weight: 700;
+	font-size: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+main .our-service .service-divs .service-text :nth-child(3){
+	font-size: .8rem;
+	color: #aaa;
+	line-height: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+/*============= END OF OUR SERVICE SECTION ===========*/
+
+/*=========== SUGGESTION SECTION ===========*/
+
+main .suggestion-section{
+	width: 100%;
+	padding: 4rem;
+	background: #222;
+}
+
+main .suggestion-section .suggestion-text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+main .suggestion-section .suggestion-text p{
+	font-size: 1.6rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+/*=========== END OF SUGGESTION SECTION =========*/
+
+/*============= FOOTER STYLING ===========*/
+
+footer .footer-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 5rem;
+	margin-bottom: 1.5rem;
+}
+
+footer .footer-container .footer-name p{
+	font-size: 2rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+footer .footer-container .footer-body{
+	font-size: .8rem;
+	color: #aaa;
+	text-align: center;
+	line-height: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+footer .footer-container .footer-icon{
+	font-size: 1rem;
+	/*margin-top: 1rem;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: .8rem;
+}
+
+footer .footer-container .footer-icon a{
+	color: #fff;
+	background:#f9004d;
+	overflow: hidden;
+	transition-duration: .2s;
+	border-radius: 50%;
+	padding: .5rem;
+	transition-duration: .2s;
+}
+
+footer .footer-container .footer-icon a:hover{
+	transform: scale(1.2);
+}
